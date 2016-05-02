@@ -1,0 +1,5 @@
+name = Update Contact
+description = Update contact form to remove checkbox
+package = Epicodus Practice
+core = 7.x
+files[] = contact_update.module

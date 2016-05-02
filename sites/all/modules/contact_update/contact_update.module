@@ -1,0 +1,7 @@
+<?php
+
+function contact_update_form_alter(&$form, $form_state, $form_id)  {
+    if($form_id == 'contact_site_form') {
+        $form['copy']['#access'] = 0;
+    }
+  }
