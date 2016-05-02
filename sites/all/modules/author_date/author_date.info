@@ -1,0 +1,5 @@
+name = Author Date
+description = Change default value of checkbox to off
+package = Epicodus Practice
+core = 7.x
+files[] = author_date.module

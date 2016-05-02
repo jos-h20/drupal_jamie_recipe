@@ -1,0 +1,6 @@
+<?php
+
+function author_date_form_alter(&$form, $form_state, $form_id)  {
+    print_r($form_id);
+
+  }
