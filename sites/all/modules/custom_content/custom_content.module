@@ -1,0 +1,35 @@
+<?php
+
+function custom_content_form_alter(&$form, $form_state, $form_id)  {
+    if($form_id == 'recipe_node_form') {
+        $form['comment_settings']['comment']['#default_value'] = 0;
+        $form['form_id']['#type'] = 'hidden';
+        $form['additional_settings']['#type'] = 'hidden';
+        $form['revision_information']['#type'] = 'hidden';
+        $form['author']['#type'] = 'hidden';
+    }
+    if($form_id == 'news_node_form') {
+        $form['comment_settings']['comment']['#default_value'] = 0;
+        $form['form_id']['#type'] = 'hidden';
+        $form['additional_settings']['#type'] = 'hidden';
+        $form['revision_information']['#type'] = 'hidden';
+        $form['author']['#type'] = 'hidden';
+    }
+    if($form_id == 'awards_node_form') {
+        $form['comment_settings']['comment']['#default_value'] = 0;
+        $form['form_id']['#type'] = 'hidden';
+        $form['additional_settings']['#type'] = 'hidden';
+        $form['revision_information']['#type'] = 'hidden';
+        $form['author']['#type'] = 'hidden';
+    }
+  }
+
+function custom_content_form_node_form_alter(&$form, &$form_state){
+    $form['#after_build'][] = 'custom_after_build';
+
+}
+function custom_after_build($form, &$form_state) {
+		$form['path']['#access'] = FALSE;
+  	$form['menu']['#access'] = FALSE;
+  	return ($form);
+}

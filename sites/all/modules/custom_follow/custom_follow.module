@@ -1,0 +1,18 @@
+<?php
+
+function custom_follow_follow_networks_alter(&$networks, $uid = 0) {
+    $networks[$uid]['imdb'] = array(
+      'title' => t('IMDB'),
+      'domain' => 'imdb.com',
+    );
+
+    $networks[$uid]['etsy'] = array(
+        'title' => t('Etsy'),
+        'domain' => 'etsy.com',
+    );
+
+    $networks[$uid]['redbubble'] = array(
+        'title' => t('RedBubble'),
+        'domain' => 'redbubble.com',
+    );
+}

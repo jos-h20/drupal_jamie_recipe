@@ -1,0 +1,5 @@
+name = Custom Content Support
+description = Tweaks custom content types for best use
+package = Epicodus Practice
+core = 7.x
+files[] = custom_content.module
