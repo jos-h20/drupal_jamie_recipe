@@ -48,6 +48,23 @@
   <?php endif; ?>
   <?php print $page_top; ?>
   <?php print $page; ?>
+  <div class="container">
+    <article class="content">
+      Tha main content. We like semantic HTML ordering.
+    </article>
+    <aside class="aside1">
+      An aside.
+    </aside>
+    <aside class="aside2">
+      Another aside.
+    </aside>
+    <footer class="footer1">
+      A footer.
+    </footer>
+    <footer class="footer2">
+      Another footer.
+    </footer>
+  </div>
   <?php print $page_bottom; ?>
 
 </body>
